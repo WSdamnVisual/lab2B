@@ -10,6 +10,11 @@ namespace lab2B
     {
         static void Main(string[] args)
         {
+            Deck deck = new Deck();//Переделать Rank и card.ToString()
+                                   //ИСПОЛЬЗОВАТЬ ИНДЕКСАТОР
+            Console.WriteLine("\t  " + deck[5].ToString());
+            deck.Show();
+            Console.ReadKey();
         }
     }
 }
