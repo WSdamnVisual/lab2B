@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4F8D445-A27D-4FC8-AB7C-658DCE29BF9C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>lab2BWPF</RootNamespace>
+    <AssemblyName>lab2BWPF</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Rank.cs" />
+    <Compile Include="Suit.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Card.cs" />
+    <Compile Include="Deck.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\clubace.jpg" />
+    <Resource Include="img\clubjack.jpg" />
+    <Resource Include="img\clubking.jpg" />
+    <Resource Include="img\clubqueen.jpg" />
+    <Resource Include="img\clubr10.jpg" />
+    <Resource Include="img\clubr2.jpg" />
+    <Resource Include="img\clubr3.jpg" />
+    <Resource Include="img\clubr4.jpg" />
+    <Resource Include="img\clubr5.jpg" />
+    <Resource Include="img\clubr6.jpg" />
+    <Resource Include="img\clubr7.jpg" />
+    <Resource Include="img\clubr8.jpg" />
+    <Resource Include="img\clubr9.jpg" />
+    <Resource Include="img\diamondace.jpg" />
+    <Resource Include="img\diamondjack.jpg" />
+    <Resource Include="img\diamondking.jpg" />
+    <Resource Include="img\diamondqueen.jpg" />
+    <Resource Include="img\diamondr10.jpg" />
+    <Resource Include="img\diamondr2.jpg" />
+    <Resource Include="img\diamondr3.jpg" />
+    <Resource Include="img\diamondr4.jpg" />
+    <Resource Include="img\diamondr5.jpg" />
+    <Resource Include="img\diamondr6.jpg" />
+    <Resource Include="img\diamondr7.jpg" />
+    <Resource Include="img\diamondr8.jpg" />
+    <Resource Include="img\diamondr9.jpg" />
+    <Resource Include="img\heartace.jpg" />
+    <Resource Include="img\heartjack.jpg" />
+    <Resource Include="img\heartking.jpg" />
+    <Resource Include="img\heartqueen.jpg" />
+    <Resource Include="img\heartr10.jpg" />
+    <Resource Include="img\heartr2.jpg" />
+    <Resource Include="img\heartr3.jpg" />
+    <Resource Include="img\heartr4.jpg" />
+    <Resource Include="img\heartr5.jpg" />
+    <Resource Include="img\heartr6.jpg" />
+    <Resource Include="img\heartr7.jpg" />
+    <Resource Include="img\heartr8.jpg" />
+    <Resource Include="img\heartr9.jpg" />
+    <Resource Include="img\spadeace.jpg" />
+    <Resource Include="img\spadejack.jpg" />
+    <Resource Include="img\spadeking.jpg" />
+    <Resource Include="img\spadequeen.jpg" />
+    <Resource Include="img\spader10.jpg" />
+    <Resource Include="img\spader2.jpg" />
+    <Resource Include="img\spader3.jpg" />
+    <Resource Include="img\spader4.jpg" />
+    <Resource Include="img\spader5.jpg" />
+    <Resource Include="img\spader6.jpg" />
+    <Resource Include="img\spader7.jpg" />
+    <Resource Include="img\spader8.jpg" />
+    <Resource Include="img\spader9.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
